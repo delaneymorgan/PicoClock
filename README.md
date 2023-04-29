@@ -22,17 +22,17 @@ Use [this](https://github.com/pimoroni/pimoroni-pico/releases/download/v1.19.18/
 Perform the usual boot-loader thing to install the interpreter.
 
 You will then need to copy the following files from this repo to the Pico:
-* picoclock.py
-* config.json
+* main.py
+* config.py
 
 ## Configuration:
-PicoClock's behaviour is driven by the config.json file.
+PicoClock's behaviour is driven by the config.py file.
 
-```json
-{
-  "12_hours": true,
+```python
+config = {
+  "12_hours": True,
   "bg_colour": "#000000",
-  "blink_colon": true,
+  "blink_colon": True,
   "brightness_dim": 0.25,
   "brightness_full": 1.0,
   "dim_start": 1800,
